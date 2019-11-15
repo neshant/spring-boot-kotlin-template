@@ -1,0 +1,11 @@
+management:
+  endpoints.web.exposure.include: "*"
+  endpoint:
+    shutdown.enabled: true
+    health.show-details: always
+
+graceful:
+  shutdown:
+    enabled: true
+    wait: 60s
+    timeout: 100s
